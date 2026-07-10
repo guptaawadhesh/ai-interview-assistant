@@ -1,4 +1,4 @@
-package com.awadhesh.ai.ai_interview_assistant;
+package com.awadhesh.ai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
