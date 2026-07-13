@@ -1,3 +1,7 @@
 spring:
   application:
     name: ai-interview-assistant
+
+ollama:
+  base-url: http://localhost:11434
+  model: gemma3:4b

@@ -1,5 +1,9 @@
 package com.awadhesh.ai.dto;
 
-public record AskRequest(String prompt){
+import jakarta.validation.constraints.NotBlank;
+
+public record AskRequest(
+        @NotBlank(message = "Prompt cannot be blank")
+        String prompt){
 
 }
