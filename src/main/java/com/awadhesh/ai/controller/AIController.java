@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/ai")
 public class AIController {
 
-    private static final Logger logger = LoggerFactory.getLogger(AIController.class);
+    private static final Logger logger =
+            LoggerFactory.getLogger(AIController.class);
+
     private final AIService aiService;
 
     public AIController(AIService aiService) {
@@ -22,9 +24,13 @@ public class AIController {
     @PostMapping("/ask")
     public AskResponse ask(@Valid @RequestBody AskRequest request) {
 
-        logger.info("Received AI request. Prompt: {}", request.prompt());
+        logger.info("Received AI request. Provider: {}, Prompt: {}",
+                request.provider(),
+                request.prompt());
 
-        String answer = aiService.ask(request.prompt());
+        String answer = aiService.ask(
+                request.provider(),
+                request.prompt());
 
         logger.info("AI response generated successfully.");
 

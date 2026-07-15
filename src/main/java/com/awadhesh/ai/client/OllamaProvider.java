@@ -5,26 +5,28 @@ import com.awadhesh.ai.dto.OllamaRequest;
 import com.awadhesh.ai.dto.OllamaResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
-@Component
-public class OllamaClient {
+@Component("ollama")
+public class OllamaProvider implements AIProvider {
 
     private static final Logger logger =
-            LoggerFactory.getLogger(OllamaClient.class);
+            LoggerFactory.getLogger(OllamaProvider.class);
 
     private final WebClient webClient;
     private final OllamaProperties ollamaProperties;
 
-    public OllamaClient(WebClient webClient,
-                        OllamaProperties ollamaProperties) {
+    public OllamaProvider(WebClient webClient,
+                          OllamaProperties ollamaProperties) {
 
         this.webClient = webClient;
         this.ollamaProperties = ollamaProperties;
     }
 
-    public String ask(String prompt) {
+    @Override
+    public String generateResponse(String prompt) {
 
         long startTime = System.currentTimeMillis();
 
@@ -49,4 +51,6 @@ public class OllamaClient {
 
         return response.response();
     }
+
+
 }
