@@ -2,7 +2,7 @@ package com.awadhesh.ai.controller;
 
 import com.awadhesh.ai.dto.AskRequest;
 import com.awadhesh.ai.dto.AskResponse;
-import com.awadhesh.ai.service.AIService;
+import com.awadhesh.ai.service.AIOrchestrator;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,22 +15,19 @@ public class AIController {
     private static final Logger logger =
             LoggerFactory.getLogger(AIController.class);
 
-    private final AIService aiService;
+    private final AIOrchestrator aiOrchestrator;
 
-    public AIController(AIService aiService) {
-        this.aiService = aiService;
+    public AIController(AIOrchestrator aiOrchestrator) {
+        this.aiOrchestrator = aiOrchestrator;
     }
 
     @PostMapping("/ask")
     public AskResponse ask(@Valid @RequestBody AskRequest request) {
 
-        logger.info("Received AI request. Provider: {}, Prompt: {}",
-                request.provider(),
+        logger.info("Received AI request.Prompt: {}",
                 request.prompt());
 
-        String answer = aiService.ask(
-                request.provider(),
-                request.prompt());
+        String answer = aiOrchestrator.ask(request);
 
         logger.info("AI response generated successfully.");
 
