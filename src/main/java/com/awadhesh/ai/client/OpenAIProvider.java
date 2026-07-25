@@ -1,13 +1,17 @@
 package com.awadhesh.ai.client;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Conditional;
+import com.awadhesh.ai.dto.AIResponse;
 import org.springframework.stereotype.Component;
 
 @Component("openai")
 public class OpenAIProvider implements AIProvider {
     @Override
-    public String generateResponse(String prompt) {
-        return "OpenAI";
+    public AIResponse generateResponse(String prompt) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    @Override
+    public String getProviderName() {
+        return "openAI";
     }
 }

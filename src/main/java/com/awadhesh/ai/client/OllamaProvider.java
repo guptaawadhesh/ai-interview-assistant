@@ -1,13 +1,15 @@
 package com.awadhesh.ai.client;
 
 import com.awadhesh.ai.config.OllamaProperties;
+import com.awadhesh.ai.dto.AIResponse;
 import com.awadhesh.ai.dto.OllamaRequest;
 import com.awadhesh.ai.dto.OllamaResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import java.util.Objects;
 
 @Component("ollama")
 public class OllamaProvider implements AIProvider {
@@ -26,7 +28,7 @@ public class OllamaProvider implements AIProvider {
     }
 
     @Override
-    public String generateResponse(String prompt) {
+    public AIResponse generateResponse(String prompt) {
 
         long startTime = System.currentTimeMillis();
 
@@ -38,7 +40,7 @@ public class OllamaProvider implements AIProvider {
         );
 
         OllamaResponse response = webClient.post()
-                .uri("/api/generate")
+                .uri(ollamaProperties.baseUrl() + "/api/generate")
                 .bodyValue(request)
                 .retrieve()
                 .bodyToMono(OllamaResponse.class)
@@ -49,7 +51,19 @@ public class OllamaProvider implements AIProvider {
         logger.info("Ollama responded in {} ms",
                 endTime - startTime);
 
-        return response.response();
+        Objects.requireNonNull(response,
+                "Ollama returned empty response");
+
+        return new AIResponse(
+                response.response(),
+                "ollama",
+                ollamaProperties.model()
+        );
+    }
+
+    @Override
+    public String getProviderName() {
+        return "ollama";
     }
 
 

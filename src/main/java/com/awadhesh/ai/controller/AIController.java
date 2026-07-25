@@ -1,5 +1,6 @@
 package com.awadhesh.ai.controller;
 
+import com.awadhesh.ai.dto.AIResponse;
 import com.awadhesh.ai.dto.AskRequest;
 import com.awadhesh.ai.dto.AskResponse;
 import com.awadhesh.ai.service.AIOrchestrator;
@@ -22,15 +23,14 @@ public class AIController {
     }
 
     @PostMapping("/ask")
-    public AskResponse ask(@Valid @RequestBody AskRequest request) {
+    public AIResponse ask(@Valid @RequestBody AskRequest request) {
 
-        logger.info("Received AI request.Prompt: {}",
-                request.prompt());
+        logger.info("Received AI request. Prompt: {}", request.prompt());
 
-        String answer = aiOrchestrator.ask(request);
+        AIResponse response = aiOrchestrator.ask(request);
 
         logger.info("AI response generated successfully.");
 
-        return new AskResponse(answer);
+        return response;
     }
 }

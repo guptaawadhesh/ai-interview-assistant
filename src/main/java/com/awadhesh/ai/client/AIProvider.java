@@ -1,6 +1,10 @@
 package com.awadhesh.ai.client;
 
+import com.awadhesh.ai.dto.AIResponse;
+
 public interface AIProvider {
 
-    String generateResponse(String prompt);
+    AIResponse generateResponse(String prompt);
+    String getProviderName();
+
 }

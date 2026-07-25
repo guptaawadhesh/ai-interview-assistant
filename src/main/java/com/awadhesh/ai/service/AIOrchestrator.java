@@ -2,6 +2,7 @@ package com.awadhesh.ai.service;
 
 import com.awadhesh.ai.client.AIProvider;
 import com.awadhesh.ai.client.AIProviderResolver;
+import com.awadhesh.ai.dto.AIResponse;
 import com.awadhesh.ai.dto.AskRequest;
 import com.awadhesh.ai.strategy.AIProviderSelectionStrategy;
 import org.slf4j.Logger;
@@ -28,7 +29,7 @@ public class AIOrchestrator {
 
 
 
-    public String ask(AskRequest request) {
+    public AIResponse ask(AskRequest request) {
 
         String providerName =
                 selectionStrategy.selectProvider(request);
@@ -40,13 +41,16 @@ public class AIOrchestrator {
             AIProvider aiProvider =
                     providerResolver.resolve(providerName);
 
-        String response = aiProvider.generateResponse(request.prompt());
+        AIResponse response =
+                aiProvider.generateResponse(request.prompt());
+
+
 
         long endTime = System.currentTimeMillis();
 
         logger.info("AI response generated in {} ms",
                 endTime - startTime);
 
-            return response;
+        return response;
     }
 }

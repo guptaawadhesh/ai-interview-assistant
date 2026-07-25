@@ -11,5 +11,4 @@ public class AiInterviewAssistantApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AiInterviewAssistantApplication.class, args);
 	}
-
 }
