@@ -1,6 +1,7 @@
 package com.awadhesh.ai.parser;
 
 import com.awadhesh.ai.dto.interview.InterviewQuestionResponse;
+import com.awadhesh.ai.parser.interview.InterviewQuestionParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 

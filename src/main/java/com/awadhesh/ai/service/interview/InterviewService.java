@@ -1,12 +1,12 @@
-package com.awadhesh.ai.service;
+package com.awadhesh.ai.service.interview;
 
 import com.awadhesh.ai.dto.AIResponse;
 import com.awadhesh.ai.dto.AskRequest;
 import com.awadhesh.ai.dto.interview.InterviewQuestionRequest;
 import com.awadhesh.ai.dto.interview.InterviewQuestionResponse;
-import com.awadhesh.ai.parser.InterviewQuestionParser;
-import com.awadhesh.ai.prompt.InterviewQuestionPromptBuilder;
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.awadhesh.ai.parser.interview.InterviewQuestionParser;
+import com.awadhesh.ai.prompt.interview.InterviewQuestionPromptBuilder;
+import com.awadhesh.ai.service.AIOrchestrator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;

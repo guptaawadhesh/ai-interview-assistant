@@ -1,4 +1,4 @@
-package com.awadhesh.ai.prompt;
+package com.awadhesh.ai.prompt.interview;
 
 import com.awadhesh.ai.dto.interview.InterviewQuestionRequest;
 import com.awadhesh.ai.service.PromptBuilder;

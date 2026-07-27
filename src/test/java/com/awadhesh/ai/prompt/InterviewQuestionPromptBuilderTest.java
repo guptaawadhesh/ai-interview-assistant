@@ -2,6 +2,7 @@ package com.awadhesh.ai.prompt;
 
 import com.awadhesh.ai.dto.interview.InterviewQuestionRequest;
 import com.awadhesh.ai.enums.Difficulty;
+import com.awadhesh.ai.prompt.interview.InterviewQuestionPromptBuilder;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;

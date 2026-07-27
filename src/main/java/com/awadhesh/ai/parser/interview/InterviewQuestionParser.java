@@ -1,4 +1,4 @@
-package com.awadhesh.ai.parser;
+package com.awadhesh.ai.parser.interview;
 
 import com.awadhesh.ai.dto.interview.InterviewQuestionResponse;
 import com.awadhesh.ai.exception.AIResponseParsingException;

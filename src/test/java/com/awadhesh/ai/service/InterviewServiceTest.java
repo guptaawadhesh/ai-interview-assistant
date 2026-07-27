@@ -5,8 +5,9 @@ import com.awadhesh.ai.dto.AskRequest;
 import com.awadhesh.ai.dto.interview.InterviewQuestionRequest;
 import com.awadhesh.ai.dto.interview.InterviewQuestionResponse;
 import com.awadhesh.ai.enums.Difficulty;
-import com.awadhesh.ai.parser.InterviewQuestionParser;
-import com.awadhesh.ai.prompt.InterviewQuestionPromptBuilder;
+import com.awadhesh.ai.parser.interview.InterviewQuestionParser;
+import com.awadhesh.ai.prompt.interview.InterviewQuestionPromptBuilder;
+import com.awadhesh.ai.service.interview.InterviewService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 

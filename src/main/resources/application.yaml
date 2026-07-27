@@ -8,7 +8,7 @@ ollama:
 
 gemini:
   base-url: https://generativelanguage.googleapis.com
-  api-key: ${GEMINI_API_KEY}
+  api-key:
   model: gemini-3.6-flash
   temperature: 0.7
   max-output-tokens: 1024
