@@ -1,0 +1,148 @@
+{
+  "resume": {
+  "detectedRole": "Senior Java Backend Engineer",
+  "experienceYears": 10,
+  "atsScore": 75,
+  "overallSummary": "Awadhesh is a Senior Java Backend Engineer with 10 years of experience building mission-critical enterprise systems in banking, payments, and manufacturing. He demonstrates solid core Java, Spring Boot, Spring Batch, and SQL experience with enterprise domain depth across Barclays, TCS, and Quest Global (Mastercard project). However, the resume lacks explicitly mentioned modern cloud, containerization, messaging architectures, and quantifiable impact metrics necessary for top-tier senior tech roles.",
+  "strengths": [
+    "Strong experience in core enterprise banking, fraud management, and payment processing systems (Mastercard, Barclays, TCS).",
+    "Deep functional expertise in core Java backend tools, including Spring Boot, Spring Batch, Hibernate, and relational databases.",
+    "Proven history of owning delivery end-to-end, from system design to production go-live and regulatory compliance.",
+    "Clean, standard bullet structure and ATS-friendly design that parses clearly."
+  ],
+  "weaknesses": [
+    "Absence of cloud technologies (AWS, GCP, Azure), containerization (Docker, Kubernetes), and modern distributed infrastructure.",
+    "Missing event-driven messaging frameworks (e.g., Kafka, RabbitMQ) expected for senior backend microservices profiles.",
+    "Bullet points focus heavily on responsibilities rather than quantifiable achievements or business impact metrics (e.g., latency reduction %, volume handled, uptime %).",
+    "Prominent listing of outdated technologies (Struts, SVN, Angular 1.5) which reduces visual emphasis on modern tech stack capabilities."
+  ],
+  "technicalSkills": [
+    "Java",
+    "SQL",
+    "Android",
+    "Angular 1.5",
+    "Spring MVC",
+    "Spring Boot",
+    "Spring Batch",
+    "Hibernate",
+    "Struts",
+    "JUnit",
+    "Oracle",
+    "MySQL",
+    "SQL Server",
+    "REST APIs",
+    "SOAP",
+    "Postman",
+    "Maven",
+    "Gradle",
+    "Jenkins",
+    "Nolio",
+    "GitHub",
+    "Bitbucket",
+    "SVN",
+    "Nexus",
+    "SonarQube",
+    "Eclipse",
+    "IntelliJ IDEA",
+    "Android Studio",
+    "Apache Tomcat",
+    "Linux",
+    "Jira",
+    "Rally"
+  ],
+  "marketExpectedSkills": [
+    "AWS / Azure / GCP",
+    "Docker",
+    "Kubernetes",
+    "Apache Kafka / RabbitMQ",
+    "Microservices Architecture",
+    "Redis / Distributed Caching",
+    "NoSQL Databases (e.g., MongoDB, DynamoDB)",
+    "Mockito / Automated Integration Testing",
+    "Distributed Tracing / Monitoring (OpenTelemetry, Prometheus, Grafana)",
+    "System Design & Distributed Systems Architecture"
+  ],
+  "recommendations": [
+    "Incorporate quantifiable metrics into experience descriptions (e.g., 'Processed 5M+ daily transaction records with 99.99% uptime', 'Improved batch processing runtime by 30%').",
+    "Highlight cloud-native and modern container technologies (AWS, Docker, Kubernetes) or microservices architecture concepts if you have hands-on exposure to them.",
+    "De-emphasize or remove outdated tools (Struts, SVN, Angular 1.5) or group them into a legacy technologies sub-section to modernize the skills focus.",
+    "Elaborate on technical leadership, architectural decision-making, and high-level system design contributions in the Senior Lead role to align with market expectations for 10+ YOE candidates."
+  ]
+  },
+  "jobDescription": {
+    "detectedRole": "Sr. Software Engineer - AVP",
+    "jobSummary": "Senior Software Engineer - Assistant Vice President at Barclays in Pune, responsible for leading technical design and fullstack development using Java 17+, Spring Boot, ReactJS, and AWS. The role focuses on building scalable backend systems, driving infrastructure evolution, managing CI/CD pipelines, ensuring risk and control standards, and mentoring engineering teams.",
+    "seniorityLevel": "Senior",
+    "minimumExperience": 0,
+    "maximumExperience": 0,
+    "employmentType": "Full-time",
+    "domain": "Banking / FinTech",
+    "mandatorySkills": [
+      "Java (JDK 17+)",
+      "Spring Boot",
+      "Spring MVC",
+      "RESTful API design",
+      "Microservices architecture",
+      "ReactJS",
+      "TypeScript",
+      "PostgreSQL",
+      "NoSQL databases",
+      "OAuth2",
+      "JWT",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "CI/CD pipelines",
+      "Maven",
+      "Gradle",
+      "Git",
+      "Automated testing",
+      "Encryption"
+    ],
+    "preferredSkills": [
+      "Background in banking, financial services, or regulated environments"
+    ],
+    "hiringPrioritySkills": [
+      "Java (JDK 17+)",
+      "Spring Boot",
+      "Microservices architecture",
+      "ReactJS",
+      "TypeScript",
+      "AWS",
+      "RESTful API design"
+    ],
+    "responsibilities": [
+      "Design, develop, and deliver high-quality, scalable, and secure backend and fullstack software solutions using Java, Spring Boot, ReactJS, and TypeScript.",
+      "Spearhead the evolution of infrastructure, cloud-native architectures, containerization, and CI/CD deployment pipelines.",
+      "Lead technical design discussions, conduct rigorous code reviews, and mentor engineers across delivery teams.",
+      "Ensure adherence to secure coding standards, authentication protocols (OAuth2/JWT), encryption, and unit testing practices.",
+      "Collaborate with product managers, designers, and cross-functional teams to align tech delivery with business strategy.",
+      "Manage operational risk, strengthen control environments, and advise leadership on complex technical and organizational decisions."
+    ],
+    "interviewTopics": [
+      "Core Java 17+ concepts, multithreading, concurrency, and Spring Boot microservices ecosystem",
+      "Distributed system design, RESTful API architecture, scalable transaction handling, and resilience patterns",
+      "Frontend architecture with ReactJS, TypeScript, state management, and fullstack integration",
+      "Relational (PostgreSQL) and NoSQL database modeling, querying, and performance tuning",
+      "Application security standards (OAuth2, JWT, authorization, encryption, secure coding)",
+      "Cloud infrastructure (AWS), containerization (Docker, Kubernetes), and CI/CD pipeline automation",
+      "Risk & control frameworks, technical leadership, team mentorship, and situational behavioral questions (Barclays LEAD behaviors)"
+    ],
+    "estimatedInterviewRounds": 4,
+    "marketExpectedSkills": [
+      "Kafka / Event-Driven Architecture",
+      "Redis / Distributed Caching",
+      "Terraform / Infrastructure as Code",
+      "Observability & Monitoring (Prometheus, Grafana, ELK)",
+      "GraphQL",
+      "TDD / BDD Frameworks (JUnit 5, Mockito, Jest)"
+    ],
+    "recommendations": [
+      "Prepare for deep-dive technical coding and architecture sessions covering modern Java (JDK 17+), Spring Boot internal design patterns, and microservices integration.",
+      "Practice fullstack system design scenarios focusing on high-volume transactional financial systems, caching, security (OAuth2/JWT), and microservices scalability.",
+      "Review ReactJS and TypeScript fundamentals, particularly state management, component lifecycle, and secure RESTful backend API integration.",
+      "Be ready to articulate experience with cloud platforms (AWS), container orchestration (Kubernetes/Docker), and CI/CD pipeline automation.",
+      "Prepare behavioral and leadership examples demonstrating Barclays' LEAD behaviors, risk and controls mindset, operational governance, and experience mentoring junior developers."
+    ]
+  }
+}
